@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "omatheuscaetano/laravel-vue-inertia-template",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A template project with larave, vueJS and Inertia.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
