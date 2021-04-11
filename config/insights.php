@@ -8,6 +8,7 @@ use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenPrivateMethods;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenTraits;
 use NunoMaduro\PhpInsights\Domain\Metrics\Architecture\Classes;
+use SlevomatCodingStandard\Sniffs\Commenting\DocCommentSpacingSniff;
 use SlevomatCodingStandard\Sniffs\Commenting\UselessFunctionDocCommentSniff;
 use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowEmptySniff;
 use SlevomatCodingStandard\Sniffs\ControlStructures\DisallowShortTernaryOperatorSniff;
@@ -84,6 +85,7 @@ return [
         UselessFunctionDocCommentSniff::class,
         DisallowEmptySniff::class,
         DisallowShortTernaryOperatorSniff::class,
+        DocCommentSpacingSniff::class,
     ],
 
     'config' => [
