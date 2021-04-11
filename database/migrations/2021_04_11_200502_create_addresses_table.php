@@ -17,9 +17,10 @@ class CreateAddressesTable extends Migration
             $table->string('neighborhood');
             $table->string('city');
             $table->string('state');
-            $table->string('country', 2)->default('BR');
+            $table->string('country')->default('Brasil');
+            $table->string('zip');
             $table->timestamps();
-            $table->foreignId('user_id');
+            $table->foreignId('user_id')->unique();
 
             $table->foreign('user_id')->references('id')->on('users');
         });
