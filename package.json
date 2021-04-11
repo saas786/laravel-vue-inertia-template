@@ -9,10 +9,23 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
-    "devDependencies": {
-        "axios": "^0.21",
+    "dependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@inertiajs/inertia": "^0.8.6",
+        "@inertiajs/inertia-vue3": "^0.3.12",
+        "@popperjs/core": "^2.6.0",
+        "bootstrap": "^5.0.0-beta1",
         "laravel-mix": "^6.0.6",
+        "vue": "^3.0.11"
+    },
+    "devDependencies": {
+        "@vue/compiler-sfc": "^3.0.11",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.20.1",
+        "sass-loader": "^8.0.0",
+        "vue-loader": "^16.1.0",
+        "vue-template-compiler": "^2.6.10"
     }
 }
