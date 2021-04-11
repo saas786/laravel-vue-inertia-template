@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Address;
+use App\Models\Phone;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -16,6 +17,12 @@ class DatabaseSeeder extends Seeder
         $index = 1;
         while ($index < 10) {
             Address::factory(1)->create();
+            $index++;
+        }
+
+        $index = 1;
+        while ($index < 9) {
+            Phone::factory(1)->create();
             $index++;
         }
 
