@@ -6,12 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateFailedJobsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
+    /** Run the migrations. */
+    public function up(): void
     {
         Schema::create('failed_jobs', function (Blueprint $table) {
             $table->id();
@@ -24,12 +20,8 @@ class CreateFailedJobsTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
+    /** Reverse the migrations. */
+    public function down(): void
     {
         Schema::dropIfExists('failed_jobs');
     }
